@@ -1,0 +1,65 @@
+Setting up a WiFi of a BeagleBone Wireless.
+Steps:
+1. Connect to the BBW.
+2. Run the network manager:
+
+debian@beaglebone:~$ sudo connmanctl
+[sudo] password for debian:
+Error getting VPN connections: The name net.connman.vpn was not provided by any
+Enter password if requested: temppwd
+Ignore the VPN error.
+
+3. Enable Wifi:
+
+connmanctl> enable wifi
+Error wifi: Already enabled
+4. Scan for Wifi networks:
+
+connmanctl> scan wifi
+Scan completed for wifi
+5. Show available Wifi services:
+
+connmanctl> services
+FIS wifi_f45eab2e3825_464953_managed_psk
+GTother wifi_f45eab2e3825_47546f74686572_managed_psk
+GTRI-Device wifi_f45eab2e3825_475452492d446576696365_managed_psk
+If no services are displayed, disable the WiFi tether and run services:
+
+connmanctl> tether wifi off
+connmanctl> services
+5b. Remove auto-connect:
+If *AO or *AR are next to a service, remove auto-connect:
+
+connmanctl> config <id of the network> auto-connect off
+<id of the network> is the value shown next to *AO or *AR starting with wifi_ … (e.g.wifi_8030dcea18e4_464953_managed_psk)
+
+6. Turn on the agent:
+
+connmanctl> agent on
+Agent registered
+7. Connect to the service of interest:
+Copy network ID of interest from step 5 and paste after ‘connect’.
+
+connmanctl> connect wifi_f45eab2e3825_47546f74686572_managed_psk
+8. Enter Wifi password:
+
+Passphrase?
+Connected to wifi_8030dcea18e4_464953_managed_psk
+9. Check auto-connect:
+
+connmanctl> services
+*AO or *AR should be next to the desired network ID.
+
+10. Quit:
+
+connmanctl> quit
+11. Test:
+The wireless network is ready after about 30 seconds.
+View IP addresses:
+
+debian@beaglebone:~$ ifconfig
+Test the network connection by pinging Google:
+
+debian@beaglebone:~$ ping google.com
+PING google.com (172.217.164.78) 56(84) bytes of data.
+64 bytes from 172.217.164.78 (172.217.164.78): icmp_seq=1 ttl=56 time=5.02 ms
