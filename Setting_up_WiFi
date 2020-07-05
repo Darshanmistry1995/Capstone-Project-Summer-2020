@@ -1,5 +1,7 @@
 Setting up a WiFi of a BeagleBone Wireless.
-Steps:
+
+Steps:-
+
 1. Connect to the BBW.
 2. Run the network manager:
 
@@ -27,6 +29,7 @@ If no services are displayed, disable the WiFi tether and run services:
 
 connmanctl> tether wifi off
 connmanctl> services
+
 5b. Remove auto-connect:
 If *AO or *AR are next to a service, remove auto-connect:
 
@@ -52,7 +55,8 @@ connmanctl> services
 
 10. Quit:
 
-connmanctl> quit
+connmanctl> quit.
+
 11. Test:
 The wireless network is ready after about 30 seconds.
 View IP addresses:
