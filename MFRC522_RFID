@@ -1,12 +1,14 @@
+//Darshan Mistry..
+//MFRC522 RFID Reader
 
-//RFID
-#include <SPI.h>
+#include <SPI.h> //spi bus initializing.
 #include <MFRC522.h>
-#define SS_PIN 10
-#define RST_PIN 9
+
+#define SS_PIN 10 //serial data interface.
+#define RST_PIN 9 //reser pin set at pin_9
+
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 
- 
 void setup() 
 {
   Serial.begin(9600);   // Initiate a serial communication
@@ -20,17 +22,17 @@ void setup()
 void loop() 
 {
   // Look for new cards
-  if ( ! mfrc522.PICC_IsNewCardPresent()) 
+  if ( ! mfrc522.PICC_IsNewCardPresent()) //reade a card
   {
     return;
   }
-  // Select one of the cards
-  if ( ! mfrc522.PICC_ReadCardSerial()) 
+  
+  if ( ! mfrc522.PICC_ReadCardSerial()) // Select one of the cards
   {
     return;
   }
-  //Show UID on serial monitor
-  Serial.print("UID tag :");
+  
+  Serial.print("UID tag :"); //Show UID on serial monitor
   String content= "";
   byte letter;
   for (byte i = 0; i < mfrc522.uid.size; i++) 
