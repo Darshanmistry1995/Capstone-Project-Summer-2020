@@ -7,7 +7,6 @@ import Adafruit_BBIO.GPIO as GPIO
 import time
 
 #Assignining port to aLED's
-
 red = "P9_16"
 green = "P9_15"
 
@@ -18,13 +17,11 @@ while True:
 #Red Led Controll.
     GPIO.output(red, GPIO.HIGH) 
     time.sleep(0.5)
-    
     GPIO.output(red, GPIO.LOW)
     time.sleep(0.5)
 
 #Green Led Controll.
     GPIO.output(green, GPIO.HIGH)
     time.sleep(0.1)
-    
     GPIO.output(green, GPIO.LOW)
     time.sleep(0.1)
