@@ -1,3 +1,6 @@
+//Darshan Mistry..
+//Interfacing 4X4 Matrix keypad with BeagleBone Black wireless using 8 GPIO pins.
+
 #include <stdio.h>
 #include <unistd.h>
 #include <iobb.h> //GPIO input_output library..
@@ -55,7 +58,7 @@ printf("%c", mat[i][j]); //Print according i,j matrix elements...
 pin_high(8,COL[i]); //Reset GPIO pin 
 }
 }
-iolib_free();
+iolib_free();  //end iobb library
 return(0);
 }
 
