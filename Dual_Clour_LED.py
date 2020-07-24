@@ -1,7 +1,7 @@
 #Darshan Mistry
 
 #!/usr/bin/python
-#	Blinks two LED wired to P9_15 and P9_16...
+#	Blinks two LED wired to P9_15 and P9_16..
 
 import Adafruit_BBIO.GPIO as GPIO
 import time
