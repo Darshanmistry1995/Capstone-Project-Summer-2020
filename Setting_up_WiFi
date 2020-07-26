@@ -57,7 +57,7 @@ connmanctl> services
 
 connmanctl> quit.
 
-11. Test:
+11. Test:-
 The wireless network is ready after about 30 seconds.
 View IP addresses:
 
