@@ -2,7 +2,7 @@ Setting up a WiFi of a BeagleBone Wireless..
 
 Steps:-
 
-1. Connect to the BBW.
+1. Connect to the BBW..
 2. Run the network manager:
 
 debian@beaglebone:~$ sudo connmanctl
