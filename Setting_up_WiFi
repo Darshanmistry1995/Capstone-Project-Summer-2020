@@ -31,7 +31,7 @@ connmanctl> tether wifi off
 connmanctl> services
 
 5b. Remove auto-connect:
-If *AO or *AR are next to a service, remove auto-connect:
+ *AO or *AR are next to a service, remove auto-connect:
 
 connmanctl> config <id of the network> auto-connect off
 <id of the network> is the value shown next to *AO or *AR starting with wifi_ … (e.g.wifi_8030dcea18e4_464953_managed_psk)
