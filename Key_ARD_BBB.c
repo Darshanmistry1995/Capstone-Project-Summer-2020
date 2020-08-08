@@ -65,7 +65,7 @@ int main ()
 
     check = tcsetattr(fd, TCSANOW, &newtio); if (check<0){perror("tcsetattr");}
 
- Printf("Welcom to smart Library automation");
+ Printf("Welcom to smart IOT Library automation");
 
 for(;;) //infinit loop
 
