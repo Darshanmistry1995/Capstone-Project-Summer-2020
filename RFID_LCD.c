@@ -180,7 +180,7 @@ for(;;) //infinit loop
         usleep(5000);
 iolib_init();
 char strg[]="1052452422";
-         // printf("%s",buff);
+          printf("%s",buff);
           scanf("%s", buff);
 
 if(strcmp(strg, buff)==0)
