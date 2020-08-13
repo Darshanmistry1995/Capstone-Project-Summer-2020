@@ -7,7 +7,7 @@
 #include <netdb.h>
 #include <string>
 
-namespace exploringRPi {
+namespace exploringBB {
 
 class SocketClient {
 
