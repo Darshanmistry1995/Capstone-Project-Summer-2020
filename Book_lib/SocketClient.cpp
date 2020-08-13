@@ -4,7 +4,7 @@
 #include <unistd.h>
 using namespace std;
 
-namespace exploringRPi {
+namespace exploringBB {
 
 SocketClient::SocketClient(std::string serverName, int portNumber) {
    this->socketfd = -1;
