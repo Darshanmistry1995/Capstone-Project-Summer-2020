@@ -28,7 +28,7 @@ system ("./out");
 		sc.send(string(head.str()));
 		sc.send(string(data.str()));
 		string rec = sc.receive(1024);
-
+                 system ("./rfid");
     }
     
     else if(book == ret)
