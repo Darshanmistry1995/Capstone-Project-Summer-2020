@@ -8,6 +8,7 @@ using namespace exploringBB
 
 int main()
 {
+system ("./out");
    int iss = 1;
     int ret =0;
     
@@ -27,6 +28,7 @@ int main()
 		sc.send(string(head.str()));
 		sc.send(string(data.str()));
 		string rec = sc.receive(1024);
+
     }
     
     else if(book == ret)
