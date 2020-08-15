@@ -1,3 +1,4 @@
+//Class Definition.
 #include "SocketClient.h"
 #include <stdio.h>
 #include <string.h>
