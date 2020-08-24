@@ -6,7 +6,8 @@
 #include <unistd.h>
 using namespace std;
 
-namespace exploringBB {
+namespace exploringBB 
+{
 
 SocketClient::SocketClient(std::string serverName, int portNumber) {
    this->socketfd = -1;
