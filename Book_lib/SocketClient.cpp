@@ -1,5 +1,5 @@
-//SocketClient Class Definition.
-//Scoket Client structure
+//SocketClient Class Definition..
+//Scoket Client structure..
 #include "SocketClient.h"
 #include <stdio.h>
 #include <string.h>
