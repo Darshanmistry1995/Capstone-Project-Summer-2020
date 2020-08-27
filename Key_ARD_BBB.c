@@ -1,4 +1,4 @@
-//Darshan Mistry.
+//Darshan Mistry..
 //Keypad Interface with BBB using Ardiuno..
 //using UART bus.
 
@@ -11,7 +11,7 @@
 #include <sys/ioctl.h> sys I/O Control
 #include <errno.h> //Defines macros ,error reporting library
 #define BAUDRATE B9600 //Set a baudrate to 9600
-#define PORT "/dev/ttyACM0" //Ardiuno USB port 
+#define PORT "/dev/ttyACM0" //Ardiuno port
 #define _POSIX_SOURCE 1
 #define FALSE 0
 #define TRUE 1
