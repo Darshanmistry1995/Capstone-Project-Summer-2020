@@ -91,7 +91,7 @@ memset(&buff,'\0',buff); //fill the mem block with value read.
     if (res < 0)
    {
         perror("read");
-        //if(errno ==EINTR) continue;
+        if(errno ==EINTR) continue;
     }
         printf("%s\n", res,buff); //print a strings getting from ardiuno
 
