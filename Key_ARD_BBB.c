@@ -1,6 +1,6 @@
 //Darshan Mistry
 //Keypad Interface with BBB using Ardiuno.
-//using UART bus..
+//using UART bus
 
 #include <termios.h> //I/O Terminals interfacing
 #include <stdio.h>
