@@ -4,7 +4,6 @@
 #include <string.h>
 int main()
 {
-    
     char str[100], strP[]="C012345";
     int PSW=1234,a,x=2;
     printf("*****Welcome to the IoT Based Smart Library*******\nPlease enter the User ID and Password");
